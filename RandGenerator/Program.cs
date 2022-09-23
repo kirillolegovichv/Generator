@@ -1,14 +1,14 @@
 ﻿using RandGenerator;
 
 MakeSequence makeSequence = new MakeSequence();
-int[] vs = makeSequence.makeRandomSequence();
+int[] generatedSeries = makeSequence.makeRandomSequence();
 
-for (int j = 0; j < vs.Length - 1; j++)
+for (int j = 0; j < generatedSeries.Length - 1; j++)
 {
-    Console.Write($"{vs[j]} ");
+    Console.Write($"{generatedSeries[j]} ");
 }
 
 Console.WriteLine();
-Console.WriteLine($"{vs.Length}");
+Console.WriteLine($"{generatedSeries.Length}");
 
 
