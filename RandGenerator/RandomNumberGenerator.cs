@@ -15,10 +15,16 @@ namespace RandGenerator
 
         }
 
+        public int GenerateCount()
+        {
+            return randomNumber.Next(20, 100);
+        }
+
         public int GenerateOne()
         {
-            int value = randomNumber.Next();
-            return value;
+            return randomNumber.Next(-100, 100);
         }
+
+
     }
 }
