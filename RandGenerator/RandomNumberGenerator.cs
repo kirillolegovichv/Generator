@@ -15,16 +15,9 @@ namespace RandGenerator
 
         }
 
-        public int GenerateCount()
+        public int Generate(int minValue, int maxValue)
         {
-            return randomNumber.Next(20, 100);
+            return randomNumber.Next(minValue, maxValue);
         }
-
-        public int GenerateOne()
-        {
-            return randomNumber.Next(-100, 100);
-        }
-
-
     }
 }
