@@ -8,6 +8,17 @@ namespace RandGenerator
 {
     public class RandomNumberGenerator
     {
+        Random randomNumber = new Random();
 
+        public RandomNumberGenerator()
+        {
+
+        }
+
+        public int GenerateOne()
+        {
+            int value = randomNumber.Next();
+            return value;
+        }
     }
 }
