@@ -16,7 +16,7 @@ namespace RandGenerator
         }
 
         public int Generate(int minValue, int maxValue)
-        {
+        {   
             return randomNumber.Next(minValue, maxValue);
         }
     }
