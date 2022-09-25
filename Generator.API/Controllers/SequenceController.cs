@@ -13,7 +13,7 @@ namespace Generator.API.Controllers
             SequenceDisplay sd = new SequenceDisplay();
 
 
-            int[] vs = new int[1];
+            int[] vs = sd.Start();
             return vs;
         }
     }

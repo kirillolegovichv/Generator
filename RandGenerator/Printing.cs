@@ -4,7 +4,7 @@
     {
         public void printArray(int[] currentArray)
         {
-            for (int j = 0; j < currentArray.Length - 1; j++)
+            for (int j = 0; j < currentArray.Length; j++)
             {
                 Console.Write($"{currentArray[j]} ");
             }
