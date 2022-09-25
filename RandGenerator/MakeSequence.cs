@@ -13,7 +13,7 @@
 
         }
 
-        public int[] makeRandomSequence()
+        public int[] MakeRandomSequence()
         {
             int count = randomNumberGenerator.Generate(minCount, maxCount);
             int[] generatedNumbers = new int[count];
@@ -24,6 +24,11 @@
             }
 
             return generatedNumbers;
+        }
+
+        public int RandomlyChooseOneOfTwo()
+        {
+            return randomNumberGenerator.Generate(0, 2);
         }
 
         
