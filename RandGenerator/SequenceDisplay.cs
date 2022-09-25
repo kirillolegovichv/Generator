@@ -2,7 +2,7 @@
 {
     public class SequenceDisplay
     {
-        public void Start()
+        public int[] Start()
         {
             MakeSequence makeSequence = new MakeSequence();
             Sorting srt = new Sorting();
@@ -22,6 +22,8 @@
             }
 
             prnt.printArray(generatedSeries);
+
+            return generatedSeries;
         }
     }
 }
