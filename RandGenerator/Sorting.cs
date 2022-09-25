@@ -2,29 +2,29 @@
 {
     public class Sorting
     {
-        public void InsertionSort(int[] inArray)
+        public void InsertionSort(int[] inputArray)
         {
             int x;
             int j;
-            for (int i = 1; i < inArray.Length; i++)
+            for (int i = 1; i < inputArray.Length; i++)
             {
-                x = inArray[i];
+                x = inputArray[i];
                 j = i;
-                while (j > 0 && inArray[j - 1] > x)
+                while (j > 0 && inputArray[j - 1] > x)
                 {
-                    Swap(inArray, j, j - 1);
+                    Swap(inputArray, j, j - 1);
                     j -= 1;
                 }
-                inArray[j] = x;
+                inputArray[j] = x;
             }
         }
 
-        public int[] MergeSort(int[] massive)
+        public int[] MergeSort(int[] inputArray)
         {
-            if (massive.Length == 1)
-                return massive;
-            int mid_point = massive.Length / 2;
-            return Merge(MergeSort(massive.Take(mid_point).ToArray()), MergeSort(massive.Skip(mid_point).ToArray()));
+            if (inputArray.Length == 1)
+                return inputArray;
+            int mid_point = inputArray.Length / 2;
+            return Merge(MergeSort(inputArray.Take(mid_point).ToArray()), MergeSort(inputArray.Skip(mid_point).ToArray()));
         }
 
         private int[] Merge(int[] mass1, int[] mass2)

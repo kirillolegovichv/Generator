@@ -8,6 +8,7 @@
             {
                 Console.Write($"{currentArray[j]} ");
             }
+            Console.WriteLine();
         }
     }
 }
