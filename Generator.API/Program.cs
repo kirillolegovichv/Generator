@@ -1,3 +1,8 @@
+using RandGenerator;
+
+SequenceDisplay sd = new SequenceDisplay();
+sd.Start();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
