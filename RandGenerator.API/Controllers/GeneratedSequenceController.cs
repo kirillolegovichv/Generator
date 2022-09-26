@@ -6,6 +6,9 @@ namespace RandGenerator.API.Controllers
     [Route("[controller]")]
     public class GeneratedSequenceController : Controller
     {
-        public 
+        public int AddSequence(GeneratedSequence generatedSequence)
+        {
+            return 23;
+        }
     }
 }
