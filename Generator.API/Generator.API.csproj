@@ -14,9 +14,4 @@
     <ProjectReference Include="..\RandGenerator\RandGenerator.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Responses\" />
-    <Folder Include="Models\Requests\" />
-  </ItemGroup>
-
 </Project>
