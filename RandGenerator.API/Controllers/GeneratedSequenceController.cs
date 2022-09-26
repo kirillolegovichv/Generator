@@ -6,9 +6,6 @@ namespace RandGenerator.API.Controllers
     [Route("[controller]")]
     public class GeneratedSequenceController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public 
     }
 }
