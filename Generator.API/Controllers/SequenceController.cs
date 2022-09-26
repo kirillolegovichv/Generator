@@ -7,19 +7,19 @@ namespace Generator.API.Controllers
     [Route("[controller]")]
     public class SequenceController : Controller
     {
-        private SendingData SendingData { get; set; }
+        private ISendingData SendingData { get; set; }
 
-        public SequenceController(SendingData sendingData)
+        public SequenceController(ISendingData sendingData)
         {
             SendingData = sendingData;
         }
 
         [HttpPost]
-        public int AddSequence()
+        public SendingData AddSequence(SendingData sendingData)
         {
             
             SendingData.Work();
-            return 42;
+            return sendingData;
         }
     }
 }
