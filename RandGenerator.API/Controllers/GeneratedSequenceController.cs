@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RandGenerator;
 
 namespace RandGenerator.API.Controllers
 {
@@ -6,9 +7,13 @@ namespace RandGenerator.API.Controllers
     [Route("[controller]")]
     public class GeneratedSequenceController : Controller
     {
-        public int AddSequence(GeneratedSequence generatedSequence)
+        [HttpPost]
+        public int[] AddSequence(GeneratedSequence generatedSequence)
         {
-            return 23;
+            SequenceDisplay sd = new SequenceDisplay();
+            int[] seq = sd.Start();
+            generatedSequence.Sequence = seq;
+            return generatedSequence.Sequence;
         }
     }
 }
