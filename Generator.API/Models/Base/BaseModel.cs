@@ -1,6 +1,6 @@
 ﻿namespace Generator.API.Models
 {
-    public abstract class BaseModel
+    public class BaseModel
     {
         public Guid Id { get; set; }
     }

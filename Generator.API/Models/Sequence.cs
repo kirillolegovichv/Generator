@@ -2,6 +2,6 @@ namespace Generator.API.Models
 {
     public class Sequence : BaseModel
     {
-        public int[] GeneratedSequence { get; set; }
+        public string GeneratedSequence { get; set; }
     }
 }

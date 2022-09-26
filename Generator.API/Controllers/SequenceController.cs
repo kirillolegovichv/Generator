@@ -1,22 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
-using RandGenerator;
 using Generator.API.Services;
 
 namespace Generator.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class SequenceController : ControllerBase
+    public class SequenceController : Controller
     {
         private ISendingData SendingData { get; set; }
 
-
+        public SequenceController(ISendingData sendingData)
+        {
+            SendingData = sendingData;
+        }
 
         [HttpPost]
-        public JsonResult AddSequence()
+        public int AddSequence()
         {
             SendingData.Work();
-            return new JsonResult("Correct resault");
+            return 42;
         }
     }
 }
