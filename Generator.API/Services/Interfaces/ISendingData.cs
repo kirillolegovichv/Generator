@@ -1,6 +1,6 @@
 ﻿namespace Generator.API.Services
 {
-    public interface IRepairService
+    public interface ISendingData
     {
         public void Work();
     }
