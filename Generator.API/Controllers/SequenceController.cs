@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using RandGenerator;
+using Generator.API.Services;
 
 namespace Generator.API.Controllers
 {
@@ -7,14 +8,15 @@ namespace Generator.API.Controllers
     [Route("[controller]")]
     public class SequenceController : ControllerBase
     {
+        private ISendingData SendingData { get; set; }
+
+
+
         [HttpPost]
-        public int[] AddSequence(Sequence currentSequence)
+        public JsonResult AddSequence()
         {
-            SequenceDisplay sd = new SequenceDisplay();
-
-
-            int[] vs = sd.Start();
-            return vs;
+            SendingData.Work();
+            return new JsonResult("Correct resault");
         }
     }
 }
