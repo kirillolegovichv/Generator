@@ -14,4 +14,8 @@
     <ProjectReference Include="..\RandGenerator\RandGenerator.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\Implementations\" />
+  </ItemGroup>
+
 </Project>
