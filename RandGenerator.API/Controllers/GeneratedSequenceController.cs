@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RandGenerator;
+using RandGenerator.API.Models;
 
 namespace RandGenerator.API.Controllers
 {

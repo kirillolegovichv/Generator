@@ -2,6 +2,10 @@
 {
     public class SequenceDisplay
     {
+        public SequenceDisplay()
+        {
+
+        }
         public int[] Start()
         {
             MakeSequence makeSequence = new MakeSequence();
