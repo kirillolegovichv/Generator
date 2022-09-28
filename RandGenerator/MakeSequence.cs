@@ -2,11 +2,11 @@
 {
     public class MakeSequence
     {
-        RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
-        int minCount = 20;
-        int maxCount = 100;
-        int minValue = -100;
-        int maxValue = 100;
+        Random randomNumber = new Random();
+        const int minCount = 20;
+        const int maxCount = 100;
+        const int minValue = -100;
+        const int maxValue = 100;
 
         public MakeSequence()
         {
@@ -15,12 +15,12 @@
 
         public int[] MakeRandomSequence()
         {
-            int count = randomNumberGenerator.Generate(minCount, maxCount);
+            int count = randomNumber.Next(minCount, maxCount);
             int[] generatedNumbers = new int[count];
 
             for (int i = 0; i < count; i++)
             {
-                generatedNumbers[i] = randomNumberGenerator.Generate(minValue, maxValue);
+                generatedNumbers[i] = randomNumber.Next(minValue, maxValue);
             }
 
             return generatedNumbers;
@@ -28,7 +28,7 @@
 
         public int RandomlyChooseOneOfTwo()
         {
-            return randomNumberGenerator.Generate(0, 2);
+            return randomNumber.Next(0, 2);
         }
 
         
