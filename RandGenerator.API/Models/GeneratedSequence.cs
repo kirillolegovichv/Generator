@@ -1,4 +1,4 @@
-﻿namespace RandGenerator.API
+﻿namespace RandGenerator.API.Models
 {
     public class GeneratedSequence
     {
