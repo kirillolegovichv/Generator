@@ -16,7 +16,7 @@ namespace RandGenerator.API.Controllers
         }
 
         [HttpPost]
-        public JsonResult AddSequence(GeneratedSequence generatedSequence)
+        public JsonResult AddSequence()
         {
             GenerateService.Generate();
             return new JsonResult("That`s work");
