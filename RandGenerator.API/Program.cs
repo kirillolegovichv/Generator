@@ -1,32 +1,10 @@
-//var builder = WebApplication.CreateBuilder(args);
+using RandGenerator;
+using RandGenerator.API;
 
-//// Add services to the container.
+ApiClient apiClient = new ApiClient();
+SequenceDisplay sd = new SequenceDisplay();
 
-//builder.Services.AddControllers();
-//// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-//builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
-
-//var app = builder.Build();
-
-//// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
-
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
-
-//app.MapControllers();
-
-//app.Run();
-
-
-using RestSharp;
-
-string currentUrl = "https://127.0.0.1";
+var sequence = sd.Start();
+apiClient.AddSequence(sequence);
 
 
